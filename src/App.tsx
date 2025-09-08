@@ -42,7 +42,7 @@ function App() {
 
       <section
         id="contact"
-        className="scroll-mt-12 w-full flex flex-col items-center bg-white"
+        className="scroll-mt-12 w-full flex flex-col bg-white"
       >
         <Contact></Contact>
       </section>

@@ -18,13 +18,13 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center mt-3 text-black m">
-        <p className="font-bold text-[48px]/[60px] text-center m-4">
+        <p className="font-bold text-[48px]/[60px] text-center m-4 md:text-[64px]/[60px]">
           Hi, I'm <span className="text-[#41268C]">Spyke Matthew Lim</span>
         </p>
       </div>
 
       <div className="flex justify-center mt-3  text-[#A88FEB] ">
-        <p className=" text-[18px] text-center mr-10 ml-10">
+        <p className=" text-[18px] text-center mr-10 ml-10 md:text-[24px]">
           Aspiring Software Engineer passionate about AI and making a difference
           in the tech industry
         </p>
