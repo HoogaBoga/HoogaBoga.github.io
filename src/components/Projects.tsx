@@ -3,43 +3,40 @@ import { ExternalLink, Github } from "lucide-react"
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "School Publication Website",
       description:
-        "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "#",
+        "Linya is iACADEMY Cebu's Student Publication website, created and designed by CS students to provide a platform for our school's news and updates.",
+      image: "/1.png",
+      technologies: ["Laravel", "PostgreSQL"],
+
+      liveUrl:
+        "http://ec2-13-236-207-223.ap-southeast-2.compute.amazonaws.com/home",
+    },
+    {
+      title: "Travel Blog Website",
+      description:
+        "A simple travel blog website about Italy, giving tourists an idea of what to expect when visiting the beautiful country",
+      image: "3.png",
+      technologies: ["HTML", "CSS", "JavaScript"],
+
+      liveUrl: "https://final-html-project-ruddy.vercel.app/",
+    },
+    {
+      title: "Restaurant Management System",
+      description:
+        "A restaurant management system for digitalizing food stocks.",
+      image: "2.jpeg",
+      technologies: ["Java", "JavaFX"],
+
       liveUrl: "#",
     },
     {
-      title: "Task Management App",
+      title: "iDiscount",
       description:
-        "A collaborative project management tool with real-time updates, team chat, and progress tracking.",
-      image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "A responsive weather application with location-based forecasts and interactive maps.",
-      image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop",
-      technologies: ["JavaScript", "API Integration", "Chart.js", "CSS3"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "A modern, responsive portfolio website built with React and deployed on Vercel.",
-      image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-      githubUrl: "#",
+        "A fintech application that aims to give Cebu students discounts for their different needs and wants",
+      image: "idis.jpg",
+      technologies: ["Flutter", "Supabase"],
+
       liveUrl: "#",
     },
   ]
@@ -79,7 +76,7 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                      className="px-3 py-1  bg-[#27194F] text-[#A88FEB] rounded-full text-sm font-medium hover:bg-[#A88FEB] hover:text-[#27194F] transition-colors duration-200"
                     >
                       {tech}
                     </span>
@@ -88,14 +85,8 @@ const Projects = () => {
 
                 <div className="flex gap-4">
                   <a
-                    href={project.githubUrl}
-                    className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    <Github size={18} />
-                    <span className="text-sm font-medium">Code</span>
-                  </a>
-                  <a
                     href={project.liveUrl}
+                    target="_blank"
                     className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
                   >
                     <ExternalLink size={18} />
